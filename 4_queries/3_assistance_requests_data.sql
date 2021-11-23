@@ -1,6 +1,6 @@
-SELECT teachers.name,
-  students.name, 
-  assignments.name,
+SELECT teachers.name AS teacher,
+  students.name AS student, 
+  assignments.name AS assigment,
   completed_at - started_at AS duration
 FROM assistance_requests
 JOIN students ON assistance_requests.student_id = students.id
